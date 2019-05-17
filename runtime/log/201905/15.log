@@ -1,0 +1,2838 @@
+---------------------------------------------------------------
+[2019-05-15T08:33:11+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html
+[运行时间：1.214784s] [吞吐率：0.82req/s] [内存消耗：3,133.70kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E6%9D%8E',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 11 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:11+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html
+[运行时间：2.192509s] [吞吐率：0.46req/s] [内存消耗：3,383.19kb] [文件加载：85]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E6%9D%8E',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 11 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:17+08:00] 192.168.12.110 POST tp5.com/index/index/add_interview.html
+[运行时间：0.285871s] [吞吐率：3.50req/s] [内存消耗：2,970.30kb] [文件加载：76]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://tp5.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'content' => '',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] INSERT INTO `interview` (`content` , `company_id` , `uid` , `create_time`) VALUES ('' , 2 , 11 , '2019-05-15 08:47:17') [ RunTime:0.002816s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:20+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html
+[运行时间：0.185144s] [吞吐率：5.40req/s] [内存消耗：3,134.48kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/add_interview.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000415s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 11 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:23+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=2
+[运行时间：0.189667s] [吞吐率：5.27req/s] [内存消耗：3,136.76kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 3,3 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 11 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 11 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 11 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000362s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:23+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=2
+[运行时间：0.191653s] [吞吐率：5.22req/s] [内存消耗：3,136.76kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000475s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 3,3 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 11 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 11 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 11 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:32+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.236770s] [吞吐率：4.22req/s] [内存消耗：2,810.80kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000347s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 11 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] UPDATE `interview`  SET `ding` = `ding` + 1  WHERE  `id` = 12 [ RunTime:0.002268s ]
+[ sql ] [ SQL ] INSERT INTO `interview_ding` (`interview_id` , `uid`) VALUES (12 , 11) [ RunTime:0.002646s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:34+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.190325s] [吞吐率：5.25req/s] [内存消耗：3,134.57kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000349s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 11 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:35+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=2
+[运行时间：0.209228s] [吞吐率：4.78req/s] [内存消耗：3,136.76kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000358s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 3,3 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 11 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 11 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 11 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:37+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.148694s] [吞吐率：6.73req/s] [内存消耗：3,134.57kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000360s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 11 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:53+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.156594s] [吞吐率：6.39req/s] [内存消耗：3,132.27kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,2 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[2019-05-15T08:47:58+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.151964s] [吞吐率：6.58req/s] [内存消耗：3,144.41kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,8 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 11 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 11 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 11 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 11 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[2019-05-15T08:48:02+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.158319s] [吞吐率：6.32req/s] [内存消耗：3,141.82kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,5 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 11 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 11 LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 11 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000305s ]
+---------------------------------------------------------------
+[2019-05-15T08:48:10+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.152042s] [吞吐率：6.58req/s] [内存消耗：3,134.61kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000366s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 11 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 11 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 11 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[2019-05-15T09:06:31+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：2.326860s] [吞吐率：0.43req/s] [内存消耗：2,008.64kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:07:04+08:00] 192.168.12.110 GET tp5.com/index/sign/in.html
+[运行时间：0.757385s] [吞吐率：1.32req/s] [内存消耗：1,624.08kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/sign/in.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:07:08+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.233724s] [吞吐率：4.28req/s] [内存消耗：2,008.64kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=672e10785fe177dc9e147eec64ca8e44',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:09:51+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.707502s] [吞吐率：1.41req/s] [内存消耗：1,649.43kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:09:55+08:00] 192.168.12.110 GET tp5.com/index/index/search.html?wd=%E6%9D%8E
+[运行时间：0.262129s] [吞吐率：3.81req/s] [内存消耗：2,658.43kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'wd' => '李',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/search.php [ array (
+  0 => 'keyword',
+  1 => 'list',
+  2 => 'newList',
+  3 => 'num',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000358s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%李%' [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%李%' [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `name` LIKE '%李%' LIMIT 0,1 [ RunTime:0.000272s ]
+---------------------------------------------------------------
+[2019-05-15T09:09:57+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html
+[运行时间：0.367358s] [吞吐率：2.72req/s] [内存消耗：3,097.22kb] [文件加载：85]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E6%9D%8E',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000248s ]
+[ error ] [8]Trying to get property of non-object[/usr/local/nginx/html/tp5/application/index/controller/Index.php:227]
+---------------------------------------------------------------
+[2019-05-15T09:10:04+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.129768s] [吞吐率：7.71req/s] [内存消耗：1,649.34kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:10:32+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.318528s] [吞吐率：3.14req/s] [内存消耗：1,552.11kb] [文件加载：59]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:10:50+08:00] 192.168.12.110 GET tp5.com/admin/sign/login.html
+[运行时间：0.116112s] [吞吐率：8.61req/s] [内存消耗：1,552.17kb] [文件加载：59]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:11:18+08:00] 192.168.12.110 GET tp5.com/admin/sign/index
+[运行时间：0.305073s] [吞吐率：3.28req/s] [内存消耗：1,618.73kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:11:25+08:00] 192.168.12.110 GET tp5.com/admin/sign/index.html
+[运行时间：0.131902s] [吞吐率：7.58req/s] [内存消耗：1,618.79kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:11:48+08:00] 192.168.12.110 GET tp5.com/admin/sign/sign
+[运行时间：0.100731s] [吞吐率：9.93req/s] [内存消耗：1,618.72kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:12:05+08:00] 192.168.12.110 GET tp5.com/admin/sign/lists
+[运行时间：0.135319s] [吞吐率：7.39req/s] [内存消耗：1,618.73kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:12:30+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.116855s] [吞吐率：8.56req/s] [内存消耗：1,552.11kb] [文件加载：59]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:12:43+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.123689s] [吞吐率：8.08req/s] [内存消耗：1,552.54kb] [文件加载：59]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:12:44+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.116751s] [吞吐率：8.57req/s] [内存消耗：1,552.54kb] [文件加载：59]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:12:57+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.129291s] [吞吐率：7.73req/s] [内存消耗：1,552.54kb] [文件加载：59]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:12:57+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.085447s] [吞吐率：11.70req/s] [内存消耗：1,552.54kb] [文件加载：59]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f56b480f4fae5ed6950a83d9a6875ccc',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:14:57+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：4.243247s] [吞吐率：0.24req/s] [内存消耗：1,649.43kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:26+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.124687s] [吞吐率：8.02req/s] [内存消耗：1,649.34kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:28+08:00] 192.168.12.110 GET tp5.com/index/sign/in.html
+[运行时间：0.146097s] [吞吐率：6.84req/s] [内存消耗：1,624.08kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/sign/in.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:28+08:00] 192.168.12.110 GET tp5.com/index/sign/favicon.ico
+[运行时间：0.179671s] [吞吐率：5.57req/s] [内存消耗：1,629.67kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/sign/in.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:18:36+08:00] 192.168.12.110 POST tp5.com/index/sign/in.html
+[运行时间：0.450578s] [吞吐率：2.22req/s] [内存消耗：2,870.13kb] [文件加载：77]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/sign/in.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://tp5.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '13598805491',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mobile` = '13598805491' LIMIT 1 [ RunTime:0.000281s ]
+---------------------------------------------------------------
+[2019-05-15T09:18:40+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.178734s] [吞吐率：5.59req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:40+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.202931s] [吞吐率：4.93req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:40+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.185040s] [吞吐率：5.40req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:41+08:00] 192.168.12.110 GET tp5.com/index/index/index.html
+[运行时间：0.136390s] [吞吐率：7.33req/s] [内存消耗：2,009.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/sign/in.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:41+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.109589s] [吞吐率：9.12req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:45+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.112383s] [吞吐率：8.90req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:47+08:00] 192.168.12.110 GET tp5.com/index/sign/in.html
+[运行时间：0.091471s] [吞吐率：10.93req/s] [内存消耗：1,624.08kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/sign/in.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:49+08:00] 192.168.12.110 GET tp5.com/index/sign/in.html
+[运行时间：0.090649s] [吞吐率：11.03req/s] [内存消耗：1,624.24kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/sign/in.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:50+08:00] 192.168.12.110 GET tp5.com/index/index/index.html
+[运行时间：0.108026s] [吞吐率：9.26req/s] [内存消耗：2,009.95kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/sign/in.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:54+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.106883s] [吞吐率：9.36req/s] [内存消耗：2,008.63kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:55+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.094880s] [吞吐率：10.54req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:55+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.106445s] [吞吐率：9.39req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:56+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.104945s] [吞吐率：9.53req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:56+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.100239s] [吞吐率：9.98req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:56+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.107202s] [吞吐率：9.33req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:56+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.108803s] [吞吐率：9.19req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:18:56+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.108267s] [吞吐率：9.24req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:19:07+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.174015s] [吞吐率：5.75req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:19:08+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.106372s] [吞吐率：9.40req/s] [内存消耗：2,008.63kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:19:17+08:00] 192.168.12.110 GET tp5.com/index/index/index
+[运行时间：0.101543s] [吞吐率：9.85req/s] [内存消耗：2,009.45kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:19:20+08:00] 192.168.12.110 GET tp5.com/index/sign/in.html
+[运行时间：0.092527s] [吞吐率：10.81req/s] [内存消耗：1,624.20kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/sign/in.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:19:30+08:00] 192.168.12.110 GET tp5.com/index/index/search.html?wd=%E8%B7%AF
+[运行时间：0.287428s] [吞吐率：3.48req/s] [内存消耗：2,655.71kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'wd' => '路',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/search.php [ array (
+  0 => 'keyword',
+  1 => 'list',
+  2 => 'newList',
+  3 => 'num',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000389s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%路%' [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%路%' [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `name` LIKE '%路%' LIMIT 0,1 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[2019-05-15T09:19:33+08:00] 192.168.12.110 GET tp5.com/index/index/add.html
+[运行时间：0.138454s] [吞吐率：7.22req/s] [内存消耗：2,016.32kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E8%B7%AF',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/add.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T09:19:34+08:00] 192.168.12.110 GET tp5.com/index/index/favicon.ico
+[运行时间：0.141012s] [吞吐率：7.09req/s] [内存消耗：1,652.82kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/add.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T09:19:40+08:00] 192.168.12.110 GET tp5.com/index/index/search.html?wd=%E6%9D%8E
+[运行时间：0.122216s] [吞吐率：8.18req/s] [内存消耗：2,658.68kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E8%B7%AF',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'wd' => '李',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/search.php [ array (
+  0 => 'keyword',
+  1 => 'list',
+  2 => 'newList',
+  3 => 'num',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000353s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%李%' [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%李%' [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `name` LIKE '%李%' LIMIT 0,1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[2019-05-15T09:19:42+08:00] 192.168.12.110 GET tp5.com/index/index/search.html?wd=%E6%9D%8E&page=2
+[运行时间：0.129025s] [吞吐率：7.75req/s] [内存消耗：2,658.30kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E6%9D%8E',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'wd' => '李',
+  'page' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/search.php [ array (
+  0 => 'keyword',
+  1 => 'list',
+  2 => 'newList',
+  3 => 'num',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%李%' [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%李%' [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `name` LIKE '%李%' LIMIT 1,1 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[2019-05-15T09:19:43+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/3.html
+[运行时间：0.202398s] [吞吐率：4.94req/s] [内存消耗：3,117.44kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E6%9D%8E&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000410s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 3 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 3 LIMIT 0,3 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=3) [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:15+08:00] 192.168.12.110 POST tp5.com/index/index/add_interview.html
+[运行时间：0.217979s] [吞吐率：4.59req/s] [内存消耗：2,971.11kb] [文件加载：76]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/3.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://tp5.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '228',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'content' => '<p><span style="color:#ffff00">第一☝️！<span><img src="http://img.baidu.com/hi/jx2/j_0072.gif"/></span></span></p>',
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] INSERT INTO `interview` (`content` , `company_id` , `uid` , `create_time`) VALUES ('<p><span style=\"color:#ffff00\">第一☝️！<span><img src=\"http://img.baidu.com/hi/jx2/j_0072.gif\"/></span></span></p>' , 3 , 7 , '2019-05-15 09:20:15') [ RunTime:0.002170s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:18+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/3.html
+[运行时间：0.153583s] [吞吐率：6.51req/s] [内存消耗：3,127.92kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/add_interview.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 3 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 3 LIMIT 0,3 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (7) [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 14  AND `uid` = 7 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=3) [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:21+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.164088s] [吞吐率：6.09req/s] [内存消耗：2,844.73kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/3.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:30+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/3.html
+[运行时间：0.186045s] [吞吐率：5.38req/s] [内存消耗：3,127.92kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E6%9D%8E&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000517s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 3 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 3 LIMIT 0,3 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (7) [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 14  AND `uid` = 7 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=3) [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:35+08:00] 192.168.12.110 GET tp5.com/index/index/search.html?wd=%E6%9D%8E&page=1
+[运行时间：0.119539s] [吞吐率：8.37req/s] [内存消耗：2,658.71kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E6%9D%8E&page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'wd' => '李',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/search.php [ array (
+  0 => 'keyword',
+  1 => 'list',
+  2 => 'newList',
+  3 => 'num',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%李%' [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `company` WHERE  `name` LIKE '%李%' [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `name` LIKE '%李%' LIMIT 0,1 [ RunTime:0.000665s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:35+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html
+[运行时间：0.148419s] [吞吐率：6.74req/s] [内存消耗：3,134.47kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/search.html?wd=%E6%9D%8E&page=1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 7 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 7 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 7 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:37+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.159191s] [吞吐率：6.28req/s] [内存消耗：2,810.77kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '4',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 7 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] UPDATE `interview`  SET `ding` = `ding` + 1  WHERE  `id` = 7 [ RunTime:0.038316s ]
+[ sql ] [ SQL ] INSERT INTO `interview_ding` (`interview_id` , `uid`) VALUES (7 , 7) [ RunTime:0.001732s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:39+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.125902s] [吞吐率：7.94req/s] [内存消耗：2,810.73kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '4',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000432s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 7 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] UPDATE `interview`  SET `ding` = `ding` + 1  WHERE  `id` = 8 [ RunTime:0.002513s ]
+[ sql ] [ SQL ] INSERT INTO `interview_ding` (`interview_id` , `uid`) VALUES (8 , 7) [ RunTime:0.002523s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:40+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.122962s] [吞吐率：8.13req/s] [内存消耗：2,810.75kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000356s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 7 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] UPDATE `interview`  SET `ding` = `ding` + 1  WHERE  `id` = 10 [ RunTime:0.003442s ]
+[ sql ] [ SQL ] INSERT INTO `interview_ding` (`interview_id` , `uid`) VALUES (10 , 7) [ RunTime:0.001642s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:41+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=2
+[运行时间：0.169503s] [吞吐率：5.90req/s] [内存消耗：3,136.74kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000359s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 3,3 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 7 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 7 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 7 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:42+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.152034s] [吞吐率：6.58req/s] [内存消耗：2,810.78kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 7 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] UPDATE `interview`  SET `ding` = `ding` + 1  WHERE  `id` = 11 [ RunTime:0.005025s ]
+[ sql ] [ SQL ] INSERT INTO `interview_ding` (`interview_id` , `uid`) VALUES (11 , 7) [ RunTime:0.001971s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:43+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.121505s] [吞吐率：8.23req/s] [内存消耗：2,810.78kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 7 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] UPDATE `interview`  SET `ding` = `ding` + 1  WHERE  `id` = 12 [ RunTime:0.003306s ]
+[ sql ] [ SQL ] INSERT INTO `interview_ding` (`interview_id` , `uid`) VALUES (12 , 7) [ RunTime:0.001609s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:44+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.155415s] [吞吐率：6.43req/s] [内存消耗：2,810.75kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '13',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 7 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] UPDATE `interview`  SET `ding` = `ding` + 1  WHERE  `id` = 13 [ RunTime:0.003155s ]
+[ sql ] [ SQL ] INSERT INTO `interview_ding` (`interview_id` , `uid`) VALUES (13 , 7) [ RunTime:0.001989s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:44+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.155792s] [吞吐率：6.42req/s] [内存消耗：2,846.07kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000385s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 7 LIMIT 1 [ RunTime:0.000300s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:46+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=2
+[运行时间：0.185681s] [吞吐率：5.39req/s] [内存消耗：3,136.78kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000379s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 3,3 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 7 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 7 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 7 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:48+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.176710s] [吞吐率：5.66req/s] [内存消耗：3,134.55kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000349s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 7 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 7 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 7 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[2019-05-15T09:20:49+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.190722s] [吞吐率：5.24req/s] [内存消耗：3,134.59kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 7 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 7 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 7 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[2019-05-15T09:21:01+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=2
+[运行时间：0.149970s] [吞吐率：6.67req/s] [内存消耗：3,136.74kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000468s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 3,3 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 7 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 7 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 7 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000889s ]
+---------------------------------------------------------------
+[2019-05-15T10:14:00+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=2
+[运行时间：0.857711s] [吞吐率：1.17req/s] [内存消耗：3,136.78kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 3,3 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11,1) [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 11  AND `uid` = 7 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 12  AND `uid` = 7 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 13  AND `uid` = 7 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[2019-05-15T10:19:48+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：4.299725s] [吞吐率：0.23req/s] [内存消耗：1,649.53kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T10:42:17+08:00] 192.168.12.110 GET tp5.com/index/index/show/id/2.html?page=1
+[运行时间：0.876950s] [吞吐率：1.14req/s] [内存消耗：3,134.02kb] [文件加载：83]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/show.php [ array (
+  0 => 'info',
+  1 => 'interview_list',
+  2 => 'page',
+  3 => 'tagList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `interview` WHERE  `company_id` = 2 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `company_id` = 2 LIMIT 0,3 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (11) [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 7 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 8  AND `uid` = 7 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 10  AND `uid` = 7 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] select * from tag where id in (select tag_id from company_tag where company_id=2) [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[2019-05-15T10:42:26+08:00] 192.168.12.110 POST tp5.com/index/index/ding.html
+[运行时间：0.249095s] [吞吐率：4.01req/s] [内存消耗：2,846.05kb] [文件加载：74]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/index/index/show/id/2.html?page=1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://tp5.com',
+  'accept' => '*/*',
+  'content-length' => '4',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:host=127.0.0.1;dbname=webpt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview` [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `interview` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `interview_ding` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `interview_ding` WHERE  `interview_id` = 7  AND `uid` = 7 LIMIT 1 [ RunTime:0.000250s ]
+---------------------------------------------------------------
+[2019-05-15T10:43:09+08:00] 192.168.12.110 GET tp5.com/static/ui/css/bootstrap.min.css.map
+[运行时间：0.513296s] [吞吐率：1.95req/s] [内存消耗：1,174.59kb] [文件加载：50]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-15T11:01:20+08:00] 192.168.12.110 GET tp5.com/
+[运行时间：0.245528s] [吞吐率：4.07req/s] [内存消耗：2,008.91kb] [文件加载：70]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/index/view/index/index.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T11:01:45+08:00] 192.168.12.110 GET tp5.com/admin/index/sgin
+[运行时间：0.168445s] [吞吐率：5.94req/s] [内存消耗：1,577.86kb] [文件加载：61]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T11:01:56+08:00] 192.168.12.110 GET tp5.com/admin/sgin/index
+[运行时间：0.114015s] [吞吐率：8.77req/s] [内存消耗：1,577.86kb] [文件加载：61]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T11:02:07+08:00] 192.168.12.110 GET tp5.com/admin/sgin/login
+[运行时间：0.114103s] [吞吐率：8.76req/s] [内存消耗：1,577.86kb] [文件加载：61]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T11:02:37+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.168570s] [吞吐率：5.93req/s] [内存消耗：1,691.81kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/admin/view/sign/login.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T11:02:37+08:00] 192.168.12.110 GET tp5.com/admin/sign/favicon.ico
+[运行时间：0.124772s] [吞吐率：8.01req/s] [内存消耗：1,621.38kb] [文件加载：63]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://tp5.com/admin/sign/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-05-15T11:03:07+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.131385s] [吞吐率：7.61req/s] [内存消耗：1,692.10kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/admin/view/sign/login.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T11:03:16+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.128593s] [吞吐率：7.78req/s] [内存消耗：1,692.10kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/admin/view/sign/login.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T11:03:23+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.128707s] [吞吐率：7.77req/s] [内存消耗：1,692.10kb] [文件加载：62]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/admin/view/sign/login.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T13:40:01+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.541552s] [吞吐率：1.85req/s] [内存消耗：1,557.85kb] [文件加载：60]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/admin/view/sign/login.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T17:05:30+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.885670s] [吞吐率：1.13req/s] [内存消耗：1,558.61kb] [文件加载：60]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/admin/view/sign/login.php [ array (
+) ]
+---------------------------------------------------------------
+[2019-05-15T19:01:51+08:00] 192.168.12.110 GET tp5.com/admin/sign/login
+[运行时间：0.740450s] [吞吐率：1.35req/s] [内存消耗：1,558.61kb] [文件加载：60]
+[ info ] [ LANG ] /usr/local/nginx/html/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9c61c1b202fb8ec12139c74c2b30f46c',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'tp5.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /usr/local/nginx/html/tp5/application/admin/view/sign/login.php [ array (
+) ]
